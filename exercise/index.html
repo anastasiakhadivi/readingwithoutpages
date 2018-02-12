@@ -1,9 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Ana- Exercise</title>
-</head>
-<body>		
-	<h1>Title of event</h1>
-</body>
+	<head>
+		<title>Ana- Exercise</title>
+		<style>
+			body{
+				width: 90vw;
+				height: 90vh;
+				/*outline: 1px solid red;*/
+				margin-left: auto;
+				margin-right: auto;
+				font-family:"helvetica";
+				color:white;
+			}
+			.container{
+				/*outline: 1px solid blue;*/
+			}
+			.square{
+				background-color: black;
+			}
+			#square-1{
+				animation-name: animationOne;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-fill-mode:forwards;
+			}
+			#square-2{
+				animation-name: animationTwo;
+				animation-duration: 1s;
+				animation-delay: 3s;
+				animation-fill-mode: forwards;
+				animation-timing-function: linear;
+				/*outline: 1px solid red;*/
+			}
+			#square-3{
+				animation-name: animationThree;
+				animation-duration: 2s;
+				animation-delay: 2s;
+				animation-fill-mode: forwards;
+				animation-timing-function: linear;
+			}
+			#main-text{
+				display: block;
+				/*outline: 1px solid red;*/
+				width: 100%;
+			}
+			#address{
+				padding-top: 55px;
+			}
+			h2{
+				color:black;
+				/*outline: 1px solid purple;*/
+				width: 40%;
+				/*padding-top: 55px;*/
+				display: inline;
+				float:right;
+				animation-name: animationFour;
+				animation-delay: 4s;
+				animation-duration: 1s;
+				opacity: 0;
+				animation-fill-mode: forwards;
+			}
+			h1{
+				font-size: 10vw;
+				/*outline: 1px solid yellow;*/
+				padding-top: 40px;
+				margin-left: 2vw;
+			}
+			@keyframes animationOne{
+				0%{
+					width:0vw;
+					height:40vh;
+				}
+				100%{
+					width: 60%;
+					height: 40vh;
+				}
+			}
+			@keyframes animationTwo{
+				0%{
+					width: 30%;
+					height: 30vh;
+					margin-top: 2vh;
+					display: inline;
+					float:right;
+				}
+				100%{
+					width: 30%;
+					height: 30vh;
+					margin-top: 2vh;
+				}
+			}
+			@keyframes animationThree{
+				0%{
+					width: 50%;
+					height: 10vh;
+					margin-top: 2vh;
+				}
+				100%{
+					width: 50%;
+					height: 10vh;
+					margin-top: 2vh;
+					display: inline;
+					float:right;
+				}
+			}
+			@keyframes animationFour{
+				0%{
+					opacity: 0;
+				}
+				100%{
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="square" id="square-1">
+				<h1>
+				Heimo<br>Zobernig
+				</h1>	
+			</div>
+			<h2 id="address">
+				chess painting<br>january 18 – february 17, 2018<br>
+				456 W 18th Street
+			</h2>
+			<div class="square" id="square-2">	
+			</div>
+			<div class="square" id="square-3">	
+			</div>
+		</div>
+		<h2 id="main-text">
+			Zobernig creates a discrete installation that includes a series of eight white large-scale, primed, monochrome canvases, hung in scacchic configuration atop rolls of black photography paper. Repurposed mobile podiums with cozy, black-and-white checkered faux-fur blankets on top, offer platforms like daybeds, which invite the visitors to stay within the gallery rooms. Taking in the light and architecture of the space, they become part in the figure-ground-relationship of the spatial configuration.<br><br>
+			Heimo Zobernig was born in Austria in 1958 and lives and works in Vienna. He studied at the Academy of Fine Arts, Vienna from 1977–1980, and at the city’s College of Applied Arts from 1980–1983. Zobernig has exhibited widely in various international shows including solo presentations at the Museum Ludwig, Cologne and the Malmö Konstall, Sweden (2016). In 2015, his work was presented in the Austrian Pavilion at the Venice Biennale. Other individual museum exhibitions include the Museo Nacional Centro de Arte Reina Sofia, Madrid, Spain (2012); a show which later traveled to the Kunsthaus Graz in Austria (2013); Kunsthalle Zürich and the Essl Museum, Vienna (2011); and two related solo presentations at the Fundação Calouste Gulbenkian in Lisbon (2009) and the Tate St. Ives (2008). In 2010 Zobernig received the Frederick Kiesler Prize for Architecture and the Arts in Vienna and the Roswitha Haftmann-Preis in Zürich, in 2016. The same year, a Catalogue raisonné of his designs of books, posters and catalogues was published by the Malmö Konstall and Verlag der Buchhandlung Walther König, Cologne.
+		</h2>
+
+
+	</body>
+
 </html>
