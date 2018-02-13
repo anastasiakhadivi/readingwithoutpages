@@ -45,6 +45,7 @@
 			#square-4{
 				background-color:black;
 				margin-top: 35vh;
+/*				position: fixed;*/
 				/*outline: 1px solid red;*/
 
 			}
@@ -110,8 +111,10 @@
 				display: block;
 				/*outline: 1px solid red;*/
 				width: 100%;
-				margin-top: 35vh;
-				margin-bottom:35vh;
+				margin-top: 15vh;
+				margin-bottom:10vh;
+				/*outline: 1px solid purple;*/
+				z-index: -1;
 			}
 			#address{
 				padding-top: 55px;
@@ -196,10 +199,52 @@
 				margin-right: auto;
 				margin-left: auto;
 			}
+/*			#container-game{
+				position: fixed;
+				outline: 1px solid red;
+				margin-top: 100px;
+			}*/
+			.fixed-1{
+				background-color: black;
+				height: 10vh;
+				width: 80vw;
+				position: fixed;
+				margin-top: 40%;
+			}
+			.fixed-2{
+				background-color: black;
+				height: 40vh;
+				width:30vw;
+				position: fixed;
+				margin-left: 55vw;
+				margin-top: 70vh;
+			}
+			.fixed-1-1{
+				background-color: black;
+				height: 70vh;
+				width: 20vw;
+				position: fixed;
+				margin-top: 2%;
+				margin-left: 20%;
+			}
+			.fixed-2-2{
+				background-color: black;
+				height: 50vh;
+				width:80vw;
+				position: fixed;
+				margin-left: 30vw;
+				margin-top: 70vh;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
+			<div class="fixed-squares">
+				<div class="fixed-1">
+				</div>
+				<div class="fixed-2">
+				</div>
+			</div>
 			<div class="square" id="square-1">
 				<h1>
 				Heimo<br>Zobernig
@@ -224,12 +269,12 @@
 			<img src="images/heimo3.jpeg">
 			<img src="images/heimo2.jpeg">
 		</div>
-		<div id="container-game">
+<!-- 		<div id="container-game">
 			<div id="square-4" class="startingfour"></div>
 			<div id="square-5" class="startingfive"></div>
 			<div id="square-6" class="startingsix"></div>
 			<div id="square-7" class="startingseven"></div>
-		</div>
+		</div> -->
 	</body>
 
 </html>

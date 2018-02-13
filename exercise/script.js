@@ -1,14 +1,8 @@
 $(document).ready(function(){
-	$("#square-4").click(function(){
-		$(this).toggleClass("endingfour");
+	$(".fixed-1").click(function(){
+		$(this).toggleClass("fixed-1-1");
 	});
-	$("#square-5").click(function(){
-		$(this).toggleClass("endingfive");
-	});
-	$("#square-6").click(function(){
-		$(this).toggleClass("endingsix");
-	});
-	$("#square-7").click(function(){
-		$(this).toggleClass("endingseven");
+	$(".fixed-2").click(function(){
+		$(this).toggleClass("fixed-2-2");
 	});
 });

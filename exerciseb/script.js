@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$("#main-text").click(function(){
+		$(this).toggleClass("white");
+	});
+	$(".square1start").click(function(){
+		$(this).toggleClass("square1end")
+	})
+	$(".square2start").click(function(){
+		$(this).toggleClass("square2end")
+	})
+	$(".square3start").click(function(){
+		$(this).toggleClass("square3end")
+	})
+});
