@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Ana- Exercise</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="script.js"></script>
 		<style>
 			body{
 				width: 90vw;
@@ -40,33 +43,75 @@
 				animation-timing-function: linear;
 			}
 			#square-4{
+				background-color:black;
+				margin-top: 35vh;
+				/*outline: 1px solid red;*/
+
+			}
+			.startingfour{
 				height: 40vh;
 				width: 20vw;
-
+				background-color:black;
+				margin-top: 35vh;
+			}
+			.endingfour{
+				height: 20vh;
+				width: 70vw;
+				background-color: black;
+				margin-top: 35vh;
 			}
 			#square-5{
+				background-color:black;
+
+			}
+			.startingfive{
 				height: 20vh;
 				width: 80vw;
+			}
+			.endingfive{
+				height: 60vh;
+				width: 10vw;
+			}
+
+			#square-6{
+				margin-top: 4vh;
+				background-color:black;
 
 			}
-			#square-6{
+			.startingsix{
 				height: 40vh;
 				width: 10vw;
-				margin-top: 4vh;
-
+			}
+			.endingsix{
+				height: 5vh;
+				width: 80vw;
 			}
 			#square-7{
+				background-color:black;
+				margin-bottom: 10vh;
+
+			}
+			.startingseven{
 				height: 10vh;
 				width: 50vw;
 				margin-left: 50vw;
 				float: right;
-
+			}
+			.endingseven{
+				height: 30vh;
+				width: 10vw;
+			}
+			#square-8{
+				height: 30vh;
+				width: 80vw;
+				float: left;
 			}
 			#main-text{
 				display: block;
 				/*outline: 1px solid red;*/
 				width: 100%;
 				margin-top: 35vh;
+				margin-bottom:35vh;
 			}
 			#address{
 				padding-top: 55px;
@@ -79,6 +124,7 @@
 			#container2{
 				/*outline: 1px solid blue;*/
 				margin-top: 70vh;
+				text-align: center;
 			}
 			h2{
 				color:black;
@@ -145,6 +191,11 @@
 					opacity: 1;
 				}
 			}
+			img{
+				width: 80vw;
+				margin-right: auto;
+				margin-left: auto;
+			}
 		</style>
 	</head>
 	<body>
@@ -168,12 +219,17 @@
 			</h2>
 		</div>
 		<br>
-<!-- 		<div id="container2">
-			<div class="square" id="square-4"></div>
-			<div class="square" id="square-5"></div>
-			<div class="square" id="square-6"></div>
-			<div class="square" id="square-7"></div>
-		</div> -->
+		<div id="container2">
+			<img src="images/heimo1.jpeg">
+			<img src="images/heimo3.jpeg">
+			<img src="images/heimo2.jpeg">
+		</div>
+		<div id="container-game">
+			<div id="square-4" class="startingfour"></div>
+			<div id="square-5" class="startingfive"></div>
+			<div id="square-6" class="startingsix"></div>
+			<div id="square-7" class="startingseven"></div>
+		</div>
 	</body>
 
 </html>
