@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ana's Demo- CSS ANIMATIONS</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>CSS Animations</h1>
+	<div class="container">
+
+		<div id=left-side1>
+			
+			<pre>
+				<code>
+	#box1{
+		animation-name: animationName1;
+		animation-duration: 1s;
+		animation-iteration-count: 5;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10%;
+	}
+	
+	@keyframes animationName1{
+		0%{
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			opacity: 1;
+		}
+		100%{
+			width: 80px;
+			height: 80px;
+			opacity: 0;
+		}
+	}
+				</code>
+			</pre>
+
+		</div>
+
+		<div id="right-side1">
+			<div id="box1"></div>
+		</div>
+		<div id="left-side2">
+			<pre>
+				<code>
+	#box2{
+		animation-name: animationName2;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes animationName2{
+	0%{
+		width: 50px;
+		height: 50px;
+		background-color: blue;
+		opacity: .2
+	}
+	10%{
+		background-color: yellow;
+		opacity: 1;
+	}
+
+	35%{
+		height: 30%;
+		background-color: #0f34c6;
+		border: 5px yellow dotted;
+	}
+	100%{
+		background-color: pink;
+		height: 100%;
+		opacity: .1
+		width:100%;
+	}
+}
+				</code>
+		</pre>
+		</div>
+		<div id="right-side2">
+			<div id="box2"></div>
+		</div>
+		<div id="left-side3">
+			<pre>
+				<code>
+	p{
+		animation-name: animationName3;
+		animation-duration: 4s;
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+		font-size: 3em
+	}
+
+	@keyframes animationName3{
+		0%{
+			font-size: 3em;
+		}
+		100%{
+			font-size: 0em;
+		}	
+	}				</code>
+			</pre>
+		</div>
+		<div id="right-side3">
+			<p id="text">You can target anything!</p>
+		</div>
+	</div>
+</body>
+</html>
