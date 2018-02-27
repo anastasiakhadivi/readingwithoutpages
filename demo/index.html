@@ -6,6 +6,10 @@
 </head>
 <body>
 	<h1>CSS Animations</h1>
+	<h2>A css animation makes elements change from one style to another over time.<br>
+	In order to use css animations, you have to set keyframes.
+
+	</h2>
 	<div class="container">
 
 		<div id=left-side1>
@@ -20,7 +24,7 @@
 		margin-right: auto;
 		margin-top: 10%;
 	}
-	
+
 	@keyframes animationName1{
 		0%{
 			width: 50px;
@@ -104,6 +108,30 @@
 		</div>
 		<div id="right-side3">
 			<p id="text">You can target anything!</p>
+		</div>
+		<div id="left-side4">
+			<pre>
+				<code>
+	p{
+		animation-name: animationName3;
+		animation-duration: 4s;
+		animation-direction: alternate-reverse;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes animationName4{
+		0%{
+			background-color: yellow;
+		}
+		100%{
+			margin-left: 35%;
+		}
+	}
+				</code>
+			</pre>
+		</div>
+		<div id="right-side4">
+			<button><a href="https://www.w3schools.com/css/css3_animations.asp">More animation possibilities!</a></button>
 		</div>
 	</div>
 </body>
