@@ -20,6 +20,28 @@ h3{
 	grid-template-rows: 1fr 1fr;
 	text-align: center;
 }
+.starrynight-table{
+/*	outline: 1px solid yellow;*/
+	width: 60vw;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#starry1{
+/*	outline: 1px solid red;*/
+	width: 10vw;
+	height: auto;
+}
+#starry2{
+/*	outline: 1px solid red;*/
+	width: 10vw;
+	height: auto;
+}
+#starry3{
+/*	outline: 1px solid red;*/
+	width: 10vw;
+	height: auto;
+}
 #color1{
 	background-color: #00ff33;
 }
@@ -39,5 +61,11 @@ h3{
 	width: 68vw;
 }
 #sample1{
+	width: 60%;
+}
+#sample2{
+	width: 60%;
+}
+#sample3{
 	width: 60%;
 }
