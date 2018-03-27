@@ -1,0 +1,43 @@
+body{
+	font-family: "helvetica";
+}
+
+#logo{
+	width: 60vw;
+	height: auto;
+}
+#concept-container{
+	width: 60%;
+}
+h3{
+	color: #ff0094;
+}
+#color-table{
+	width: 60vw;
+	height: 30vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+}
+#color1{
+	background-color: #00ff33;
+}
+#color2{
+	background-color: #ff0094;
+}
+#color3{
+	background-color: yellow;
+}
+#color4{
+	background-color: cyan;
+}
+#heimo-img{
+	width: 60vw;
+}
+#textures{
+	width: 68vw;
+}
+#sample1{
+	width: 60%;
+}
