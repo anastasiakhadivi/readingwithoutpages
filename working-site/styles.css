@@ -6,6 +6,13 @@ body{
 	height:100px;
 	background-color: cyan;
 	margin-bottom: 5%;
+	color:#f442eb;
+	font-size: 4em;
+	text-align: center;
+
+}
+#box1 a{
+	text-decoration: none;
 }
 #box2{
 	width: 40%;
@@ -13,10 +20,16 @@ body{
 	background-color: cyan;
 	margin-left:15%;
 	margin-bottom: 5%;
+		color:#f442eb;
+	font-size: 4em;
+	text-align: center;
 }
 #box3{
 	width: 40%;
 	height:100px;
 	background-color: cyan;
 	margin-left: 30%;
+		color:#f442eb;
+	font-size: 4em;
+	text-align: center;
 }
