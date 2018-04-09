@@ -1,5 +1,22 @@
+body{
+	background-color: black;
+}
 #box1{
-	width: 100px;
+	width: 40%;
 	height:100px;
-	background-color: red;
+	background-color: cyan;
+	margin-bottom: 5%;
+}
+#box2{
+	width: 40%;
+	height:100px;
+	background-color: cyan;
+	margin-left:15%;
+	margin-bottom: 5%;
+}
+#box3{
+	width: 40%;
+	height:100px;
+	background-color: cyan;
+	margin-left: 30%;
 }
