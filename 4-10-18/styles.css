@@ -5,6 +5,7 @@ body{
 	/*outline: 1px solid cyan;*/
 	height: 95vh;
 	background-color: black;
+	font-family: "helvetica", sans-serif;
 }
 .box{
 	background-color: white;
@@ -33,7 +34,6 @@ body{
 	margin-bottom: 1%;
 	background-color: cyan;
 	outline: 1px solid black;
-
 }
 #small1{
 	position: fixed;
@@ -53,3 +53,23 @@ body{
 .invert{
 	filter: invert(100%);
 }
+#current-time-a{
+	color:red;
+	font-size: 20em;
+	float:right;
+	top:14%;
+	position: fixed;
+	left:30%;
+	opacity: 0;
+
+}
+#current-weather{
+	color:red;
+	font-size: 12em;
+	float:right;
+	top:14%;
+	position: fixed;
+	left:30%;
+	opacity: 0;
+}
+

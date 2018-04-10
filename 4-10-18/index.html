@@ -12,6 +12,10 @@
 			// $("#small1").click(function(){
 			// 	$("body").toggleClass("invert");
 			// })
+			$("#time").click(function(){
+				$("#current-time-a").css("opacity","1");
+				console.log("I'M WORKING TIMEEEE");
+			})
 });	
 	</script>
 </head>
@@ -31,8 +35,10 @@
 	<!-- menu 3 - time and weather all the time -->
 	<!-- two landscape rectangles - white with black outline -->
 	<div class="third-menu">
-		<a href=""><div class="portrait-rectangles"></div></a>
-		<a href=""><div class="portrait-rectangles"></div></a>
+		<div id ="time" class="portrait-rectangles"></div>
+		<a href=""><div id ="weather" class="portrait-rectangles"></div></a>
+		<div id="current-time-a">1:37</div>
+		<div id="current-weather">46 degrees</div>
 	</div>
 	<div class="other-formats">
 		<a href=""><div id ="small1" class="small-box"></div><br></a>
