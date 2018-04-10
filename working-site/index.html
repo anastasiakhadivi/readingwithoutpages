@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>News</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			console.log("Ready freddy");
+			 	var audio1 = document.createElement("audio");
+ 					audio1.src = "media/an-angry-president.m4a";
+  				// 	audio1.volume = 0.1;
+  				// 	audio1.autoPlay = false;
+ 					// audio1.preLoad = true;
+ 					// audio1.controls = true;
+ 				var audio2 = document.createElement("audio");
+ 				audio2.src="media/fda-worried.m4a"; 
+
+ 				var audio3 = document.createElement("audio");
+ 				audio3.src= "media/this-new-memorial.m4a"; 
+
+ 				var weatherNow = document.createElement("audio");
+ 				weatherNow.src= "media/weather.m4a";
+
+ 				var timeNow = document.createElement("audio");
+ 				timeNow.src= "media/time.m4a";
+
+ 				var storyOne = document.createElement("audio");
+ 				storyOne.src= "media/fbi-raid.m4a";
+
+  $("#menu-one").mouseover(function() {
+    audio1.play();
+  });
+	$("#menu-one").mouseout(function() {
+    audio1.pause();
+  });
+    $("#menu-two").mouseover(function() {
+    audio2.play();
+  });
+    $("#menu-two").mouseout(function() {
+    audio2.pause();
+  });
+    $("#menu-three").mouseover(function() {
+    audio3.play();
+  });
+    $("#menu-three").mouseout(function() {
+    audio3.pause();
+  });
+   $("#weather").mouseover(function() {
+    weatherNow.play();
+  });	
+   $("#weather").mouseout(function() {
+    weatherNow.pause();
+  });
+    $("#time").mouseover(function() {
+    timeNow.play();
+  });
+  $("#time").mouseout(function() {
+    timeNow.play();
+  });	
+    $("#menu-one").dblclick(function() {
+    storyOne.play();
+  });
+		})
+	</script>
 </head>
 <body>
-	<a href=""><div id="box1">Art 1</div></a>
-	<a href=""><div id="box2">Art 2</div></a>
-	<a href=""><div id="box3">Art 3</div></a>
-
+	<div id="background-text"><p>An angry president without any protective coccoon of staffers is capable of almost anything.</p></div>
+	<div class="hamburger-menu">
+		<div id ="menu-one" class="top-hamburger"></div></a>
+		<div id ="menu-two" class="top-hamburger"></div>
+		<div id ="menu-three" class="top-hamburger"></div>
+	</div>
+	<div class="middle-menu">
+		<div id="something"></div>
+	</div>
+	<div class="bottom-menu">
+		<div id ="weather" class="bottom-menu-format"></div>
+		<div id="time" class="bottom-menu-format"></div>
+	</div>
 </body>
 </html>
