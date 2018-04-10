@@ -1,0 +1,55 @@
+body{
+	width: 90vw;
+	margin-right: auto;
+	margin-left: auto;
+	/*outline: 1px solid cyan;*/
+	height: 95vh;
+	background-color: black;
+}
+.box{
+	background-color: white;
+	outline: 1px solid black;
+	width:100px;
+	height:100px;
+	margin-bottom: 2%;
+}
+.vertical-rectangle{
+	height: 30vh;
+	width: 3vw;
+	background-color: white;
+	outline: 1px solid black;
+	margin-bottom: 2%;
+}
+.portrait-rectangles{
+	outline: 1px solid black;
+	background-color: white;
+	height: 6vh;
+	width: 35vw;
+	margin-bottom: 2%;
+}
+.small-box{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 1%;
+	background-color: cyan;
+	outline: 1px solid black;
+
+}
+#small1{
+	position: fixed;
+	top: 60%;
+	right:5%;
+}
+#small2{
+	position: fixed;
+	top: 70%;
+	right: 5%;
+}
+#small3{
+	position: fixed;
+	top: 80%;
+	right: 5%;
+}
+.invert{
+	filter: invert(100%);
+}

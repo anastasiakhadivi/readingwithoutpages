@@ -30,21 +30,27 @@
 
   $("#menu-one").mouseover(function() {
     audio1.play();
+    $("#one").css("opacity","1");
   });
 	$("#menu-one").mouseout(function() {
     audio1.pause();
+    $("#one").css("opacity","0");
   });
     $("#menu-two").mouseover(function() {
     audio2.play();
+    $("#two").css("opacity","1");
   });
     $("#menu-two").mouseout(function() {
     audio2.pause();
+    $("#two").css("opacity","0");
   });
     $("#menu-three").mouseover(function() {
     audio3.play();
+    $("#three").css("opacity","1");
   });
     $("#menu-three").mouseout(function() {
     audio3.pause();
+    $("#three").css("opacity","0");
   });
    $("#weather").mouseover(function() {
     weatherNow.play();
@@ -61,11 +67,17 @@
     $("#menu-one").dblclick(function() {
     storyOne.play();
   });
+    $("body").click(function(){
+    	$("body").css("background-color", "white");
+    })
 		})
 	</script>
 </head>
 <body>
-	<div id="background-text"><p>An angry president without any protective coccoon of staffers is capable of almost anything.</p></div>
+	<div class="background-text" id="one"><p>An angry president without any protective coccoon of staffers is capable of almost anything.</p></div>
+	<div class="background-text" id="two"><p>FDA worried drug was risky, now reports of deaths are concern.</p></div>
+	<div class="background-text" id="three"><p>This new memorial makes you rethink what you learned about U.S. History.</p></div>
+
 	<div class="hamburger-menu">
 		<div id ="menu-one" class="top-hamburger"></div></a>
 		<div id ="menu-two" class="top-hamburger"></div>
