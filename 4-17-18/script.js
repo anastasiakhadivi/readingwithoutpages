@@ -77,7 +77,7 @@ $(document).ready(function(){
     timeNow.play();
   });
   $("#time").mouseout(function() {
-    timeNow.play();
+    timeNow.pause();
   });	
   $("#sports1").mouseover(function(){
   	sportsScores.play();
