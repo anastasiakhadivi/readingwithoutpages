@@ -22,11 +22,11 @@ $(document).ready(function(){
  				// audio1.volume = 0.1;
 
  				var weatherNow = document.createElement("audio");
- 				weatherNow.src= "media/weather.m4a";
+ 				weatherNow.src= "media/Weather.m4a";
  				// audio1.volume = 0.1;
 
  				var timeNow = document.createElement("audio");
- 				timeNow.src= "media/time.m4a";
+ 				timeNow.src= "media/Time.m4a";
  				// audio1.volume = 0.1;
 
  				var storyOne = document.createElement("audio");
