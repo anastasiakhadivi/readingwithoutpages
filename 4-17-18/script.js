@@ -10,31 +10,37 @@ $(document).ready(function(){
 		
 	});
 	// audio variables
-	var audio1 = document.createElement("audio");
- 					audio1.src = "media/an-angry-president.m4a";
-  					audio1.volume = 0.1;
-  				// 	audio1.autoPlay = false;
- 					// audio1.preLoad = true;
- 					// audio1.controls = true;
+				var audio1 = document.createElement("audio");
+ 				audio1.src = "media/an-angry-president.m4a";
+ 				
  				var audio2 = document.createElement("audio");
  				audio2.src="media/fda-worried.m4a"; 
- 				audio1.volume = 0.1;
+ 				// audio1.volume = 0.1;
 
  				var audio3 = document.createElement("audio");
- 				audio3.src= "media/this-new-memorial.m4a"; 
- 				audio1.volume = 0.1;
+ 				audio3.src= "media/soup1.m4a"; 
+ 				// audio1.volume = 0.1;
 
  				var weatherNow = document.createElement("audio");
  				weatherNow.src= "media/weather.m4a";
- 				audio1.volume = 0.1;
+ 				// audio1.volume = 0.1;
 
  				var timeNow = document.createElement("audio");
  				timeNow.src= "media/time.m4a";
- 				audio1.volume = 0.1;
+ 				// audio1.volume = 0.1;
 
  				var storyOne = document.createElement("audio");
  				storyOne.src= "media/fbi-raid.m4a";
- 				audio1.volume = 0.1;
+ 				// audio1.volume = 0.1;
+
+ 				var storyTwo = document.createElement("audio");
+ 				storyTwo.src= "media/nuplazid.m4a";
+
+ 				var storyThree = document.createElement("audio");
+ 				storyThree.src="media/soup2.m4a";
+
+ 				var sportsScores = document.createElement("audio");
+ 				sportsScores.src="media/sports.m4a";
  	// audio functions
 
   $("#news1").mouseover(function() {
@@ -73,8 +79,27 @@ $(document).ready(function(){
   $("#time").mouseout(function() {
     timeNow.play();
   });	
+  $("#sports1").mouseover(function(){
+  	sportsScores.play();
+  });
+  $("#sports1").mouseout(function(){
+  	sportsScores.pause();
+  });
     $("#news1").click(function() {
     storyOne.play();
     console.log("news1 full story playing");
   });
+    $("#news2").click(function() {
+    storyTwo.play();
+    console.log("news2 full story playing");
+  });
+    $("#news3").click(function() {
+    storyThree.play();
+    console.log("news3 full story playing");
+  });
+    $("#news1").dblclick(function(){
+    	console.log("i've been double clicked!");
+    	$(".weather-boxes").hide();
+    	$(".sports-boxes").hide();
+    });
 });
