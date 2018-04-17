@@ -70,13 +70,13 @@ $(document).ready(function(){
    $("#weather1").mouseover(function() {
     weatherNow.play();
   });	
-   $("#time1").mouseout(function() {
+   $("#weather1").mouseout(function() {
     weatherNow.pause();
   });
     $("#time1").mouseover(function() {
     timeNow.play();
   });
-  $("#time").mouseout(function() {
+  $("#time1").mouseout(function() {
     timeNow.pause();
   });	
   $("#sports1").mouseover(function(){
