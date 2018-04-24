@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seeing Past Sight</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log("ready freddy");
+			
+			$("#accessibility-button").click(function(){
+				$("body").toggleClass("body-accessibility");
+				$(".navigation").toggleClass("navigation-accessibility");
+				$(".logo a").toggleClass("logo-accessibility");
+				
+				console.log("working accessibility mode");
+			})
+		});
+	</script>
+</head>
+<body>
+	<h1>on approaching<br> accessibility.</h1>
+	<h2>Visually Impaired</h2>
+
+	<ul class="navigation">
+		<li class="logo"><a href="index.html"> seeing past sight.</a></li>
+		<li><a href="day.html">a day in the life</a></li>
+		<li><a href="interview.html">an interview with</a></li>
+		<li><a href="working.html">on designing for</a></li>
+		<li id="accessibility-button">accessibility mode</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+/*defining the body*/
+body{
+	width: 90vw;
+	font-family: "helvetica", sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*accessibility mode for the body*/
+.body-accessibility{
+	width: 90vw;
+	width: 90vw;
+	font-family: "helvetica", sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	background-color:black;
+}
+
+/*Sizing of h1 and h2*/
+h1{
+	font-size: 5em;
+	margin-bottom: 0;
+}
+h2{
+	font-size: 1em;
+	margin-top: 0;
+}
+.navigation{
+	list-style-type: none;
+	outline: 1px solid black;
+	width: 98vw;
+	padding: 0;
+  	margin: 0;
+  	height: 8vh;
+  	position: fixed;
+  	bottom: 1vh;
+  	left: 1vw;
+  	font-size: 1.5em;
+
+
+}
+.navigation-accessibility{
+	list-style-type: none;
+	outline: 1px solid white;
+	width: 98vw;
+	padding: 0;
+  	margin: 0;
+  	height: 8vh;
+  	position: fixed;
+  	bottom: 1vh;
+  	left: 1vw;
+  	font-size: 1.5em;
+}
+.navigation li{
+	display: inline-block;
+	margin-left: 2vw;
+	vertical-align: middle;
+	line-height: 60px;
+}
+.navigation a{
+	text-decoration: none;
+	color:#18fc05;
+	display: block;
+}
+#accessibility-button{
+	color:cyan;
+
+}
+#accessibility-button:hover{
+	cursor: pointer;
+	
+}
+.logo a{
+	color:black;
+}
+.logo-accessibility{
+	color:white;
+}
+.iframe-accessibility{
+	display: none;
+}
+.text-accessible{
+/*	outline: 1px solid pink;*/
+	font-size: 3em;
+	width: 90%;
+	line-height: 2.2em;
+	margin-bottom: 10%;
+	display: none;
+}
+.interview{
+	font-size: 1.2em;
+	line-height: 1.5em;
+	width: 65%;
+	margin-bottom: 10%;
+
+}
+.adam{
+	background-color: cyan;
+}
+.charles{
+	background-color:#18fc05;
+}
+.description{
+/*	outline: 1px solid red;*/
+	font-size: 1.4em;
+	line-height: 1.4em;
+	width: 60%;
+	background-color: cyan;
+	padding: 1%;
+}
+
