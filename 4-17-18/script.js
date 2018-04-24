@@ -1,14 +1,14 @@
 $(document).ready(function(){
 	console.log("Ready Freddy!");
 	// 1. if you click on "about", and the about section comes up.
-	$("#about").click(function(){
-	// 2. everything else disappears
-		$(".disappear").toggle();
-		console.log("hiding/showwing now!");
-		// 3. Show writeup
-		$("#about-writeup").toggle();
+	// $("#about").click(function(){
+	// // 2. everything else disappears
+	// 	$(".disappear").toggle();
+	// 	console.log("hiding/showwing now!");
+	// 	// 3. Show writeup
+	// 	$("#about-writeup").toggle();
 		
-	});
+	// });
 	// audio variables
 				var audio1 = document.createElement("audio");
  				audio1.src = "media/an-angry-president.m4a";

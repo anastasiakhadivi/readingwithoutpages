@@ -37,6 +37,7 @@ h2{
   	bottom: 1vh;
   	left: 1vw;
   	font-size: 1.5em;
+  	background-color: white;
 
 
 }
@@ -81,7 +82,6 @@ h2{
 	display: none;
 }
 .text-accessible{
-/*	outline: 1px solid pink;*/
 	font-size: 3em;
 	width: 90%;
 	line-height: 2.2em;
@@ -109,4 +109,64 @@ h2{
 	background-color: cyan;
 	padding: 1%;
 }
-
+.interview-accessible{
+	font-size: 3em;
+	width: 90%;
+	line-height: 2.2em;
+	margin-bottom: 10%;
+}
+.adam-accessible{
+	color:cyan;
+	background-color: black;
+}
+.charles-accessible{
+	color:#18fc05;
+	background-color: black;
+}
+.description-accessible{
+	font-size: 3em;
+	width: 90%;
+	line-height: 2.2em;
+	background-color: black;
+	color:#ff0094;
+}
+.grid{
+	width: 100%;
+	outline: 1px solid black;
+	height: 200px;
+	display: flex;
+}
+.left{
+	width: 20%;
+	outline: 1px solid red;
+	height: 100px;
+}
+.right{
+	width: 80%;
+	outline: 1px solid blue;
+}
+.color1{
+	height: 10%;
+	width: 30%;
+	background-color: cyan;
+}
+.color2{
+	height: 50%;
+	width: 30%;
+	background-color: #18fc05;
+}
+.designing{
+	list-style-type: none;
+/*	outline: 1px solid blue;*/
+	padding-left: 0;
+	margin-bottom: 10%;
+}
+.designing li{
+	font-size: 2em;
+	color: #18fc05;
+}
+.designing p{
+/*	outline: 1px solid yellow;*/
+	width: 60%;
+	font-size: 1.2em;
+}
