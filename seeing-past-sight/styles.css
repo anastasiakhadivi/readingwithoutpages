@@ -26,6 +26,7 @@ h2{
 	font-size: 1em;
 	margin-top: 0;
 }
+/*navigation bar*/
 .navigation{
 	list-style-type: none;
 	outline: 1px solid black;
@@ -77,6 +78,9 @@ h2{
 }
 .logo-accessibility{
 	color:white;
+}
+iframe{
+	margin-bottom: 10%;
 }
 .iframe-accessibility{
 	display: none;
@@ -169,4 +173,46 @@ h2{
 /*	outline: 1px solid yellow;*/
 	width: 60%;
 	font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    /*background-color: olive;*/
+
+  }
+  .navigation{
+	list-style-type: none;
+	outline: 1px solid black;
+	width: 97vw;
+	padding: 0;
+  	margin: 0;
+  	height: 35vh;
+  	position: fixed;
+  	bottom: 1vh;
+  	left: 1vw;
+  	font-size: 1.5em;
+  	background-color: white;
+
+
+}
+.navigation li{
+	display: block;
+	margin-left: 2vw;
+	vertical-align: middle;
+	line-height: 60px;
+}
+.navigation a{
+	text-decoration: none;
+/*	color:#18fc05;*/
+	float:none;
+}
+iframe{
+	margin-bottom: 90%;
+	width: 368px;
+	height: 207px;
+}
+.description{
+	width: 100%;
+	padding: 1%;
 }
