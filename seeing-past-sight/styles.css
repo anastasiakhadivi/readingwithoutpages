@@ -9,12 +9,13 @@ body{
 /*accessibility mode for the body*/
 .body-accessibility{
 	width: 90vw;
-	width: 90vw;
+/*	width: 90vw;*/
 	font-family: "helvetica", sans-serif;
 	margin-right: auto;
 	margin-left: auto;
 	color: white;
 	background-color:black;
+	height:200vh; 
 }
 
 /*Sizing of h1 and h2*/
