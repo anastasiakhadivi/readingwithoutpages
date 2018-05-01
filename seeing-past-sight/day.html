@@ -7,38 +7,60 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			console.log("ready freddy");
-			$("#accessibility-button").click(function(){
-				$("body").toggleClass("body-accessibility");
-				$(".navigation").toggleClass("navigation-accessibility");
-				$("iframe").toggleClass("iframe-accessibility");
-				console.log("working accessibility mode");
 
-				var audio1 = document.createElement("audio");
- 				audio1.src = "media/day.mp3";
- 				audio1.play();
+			var audio1 = document.createElement("audio");
+ 			audio1.src = "media/day.mp3";
+			var accessibilityOn = false;
+			var updatePage = function(){
+				if(accessibilityOn){
+					// if accessibility is on do this...
+					audio1.play();
+					$("body").addClass("body-accessibility");
+					$(".navigation").addClass("navigation-accessibility");
+					$("iframe").addClass("iframe-accessibility");
+					$(".text-accessible").show();
+					$(".description").hide();
+					$(".logo-white").css("color","white");
+				}else{
+					// if accessibility is off do this...
+					audio1.pause();
+					audio1.currentTime = 0;
+					$("body").removeClass("body-accessibility");
+					$(".navigation").removeClass("navigation-accessibility");
+					$("iframe").removeClass("iframe-accessibility");
+					$(".text-accessible").hide();
+					$(".description").show();
+					$(".logo-white").css("color","black");
+					
+				}
+			}
 
- 				$(".text-accessible").toggle();
- 				$(".description").toggle();
-			})
+			$(".accessibility-button").click(function(){
+				accessibilityOn = !accessibilityOn;
+				updatePage();
+				console.log("i'm successfully updating");
+			});
+
 		});
 	</script>
 </head>
 <body>
 	<h1>a day in the life of</h1>
 	<h2>Griffin Pinkow</h2>
-	<p class="text-accessible">I’d rather be outside running. It’s funny some people say oh I can’t keep up with you oh I don’t want to ride with you, this that and the other. I don’t care what pace you want to go at. If we’re at the same pace or you’re going faster than me or slower than me, it doesn’t matter, at least we’re enjoying doing this outside.instead of being stuck inside on a treadmill or in a gym or not doing anything at all. The only limits are the ones you put on yourself. Being visually impaired isn’t even something I think about…It’s just who I am.</p>
+	<p class="text-accessible">I’d rather be outside running. It’s funny some people say oh I can’t keep up with you oh I don’t want to ride with you, this that and the other. I don’t care what pace you want to go at. If we’re at the same pace or you’re going faster than me or slower than me, it doesn’t matter, at least we’re enjoying doing this outside instead of being stuck inside on a treadmill or in a gym or not doing anything at all. The only limits are the ones you put on yourself. Being visually impaired isn’t even something I think about…It’s just who I am.</p>
 
-	<p class="description">At the age of 24, Griffin Pinkow started the Foreseeable Future Foundation to encourage sports and recreation programs for the visually impaired. He himself suffers from a visual impairment and advocates for the "remaking" of all activites so that everyone can be included.</p>
+	<p class="description">At the age of 24, Griffin Pinkow started the Foreseeable Future Foundation to encourage sports and recreation programs for the visually impaired. He himself suffers from a visual impairment and advocates for the "reimagining" of all activites, especially those that people would assume the blind couldn't take part in, such as reading.</p>
 
 	<iframe width="800" height="450" src="https://www.youtube.com/embed/vNl82erUxJ8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 	<ul class="navigation">
-		<li class="logo"><a href="index.html">seeing past sight.</a></li>
-		<li><a href="day.html" style="text-decoration:underline;">a day in the life</a></li>
-		<li><a href="interview.html">an interview with</a></li>
-		<li><a href="working.html">on designing for</a></li>
-		<li id="accessibility-button">accessibility mode</li>
+		<li class="logo"><a href="index.html" class="logo-white">seeing past sight.</a></li>
+		<li><a class="nav-links" href="day.html" style="text-decoration:underline;">a day in the life</a></li>
+		<li><a class="nav-links" href="interview.html">an interview with</a></li>
+		<li><a class="nav-links" href="working.html">on designing for</a></li>
 	</ul>
 
+	<div class="accessibility-button">accessibility mode</div>
+	
 </body>
 </html>

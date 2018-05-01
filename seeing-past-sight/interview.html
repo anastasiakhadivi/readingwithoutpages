@@ -5,20 +5,52 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			console.log("ready freddy");
-			$("#accessibility-button").click(function(){
-				$("body").toggleClass("body-accessibility");
-				$(".navigation").toggleClass("navigation-accessibility");
-				console.log("working accessibility mode");
+		// $(document).ready(function(){
+		// 	console.log("ready freddy");
+		// 	$("#accessibility-button").click(function(){
+		// 		$("body").toggleClass("body-accessibility");
+		// 		$(".navigation").toggleClass("navigation-accessibility");
+		// 		console.log("working accessibility mode");
 
-			// change the styling of the interview for accessibility mode
-				$(".interview").toggleClass("interview-accessible");
-				$(".adam").toggleClass("adam-accessible");
-				$(".charles").toggleClass("charles-accessible");
-				$(".description").toggleClass("description-accessible");
-			})
-		});
+		// 	// change the styling of the interview for accessibility mode
+		// 		$(".interview").toggleClass("interview-accessible");
+		// 		$(".adam").toggleClass("adam-accessible");
+		// 		$(".charles").toggleClass("charles-accessible");
+		// 		$(".description").toggleClass("description-accessible");
+		// 	})
+		// });
+
+				$(document).ready(function(){
+			console.log("ready freddy");
+
+	// create a function to see if accessibility is on or off
+
+		var accessibilityOn = false;
+		var updatePage = function(){
+			if(accessibilityOn){
+			// if accessibility is on...
+				$("body").addClass("body-accessibility");
+				$(".navigation").addClass("navigation-accessibility");
+				// $(".logo-white").addClass("logo-accessibility");
+				$(".logo-white").css("color","white");
+				$(".interview").addClass("interview-accessible");
+				$(".description").addClass("description-accessible");
+			}else{
+			// if accessibility is off...
+				$("body").removeClass("body-accessibility");
+				$(".navigation").removeClass("navigation-accessibility");
+				$(".logo-white").css("color","black");
+				$(".interview").removeClass("interview-accessible");
+				$(".description").removeClass("description-accessible");
+			}
+		};
+
+	$(".accessibility-button").click(function(){
+		accessibilityOn = !accessibilityOn;
+		updatePage();
+		console.log("updating index page");
+	});
+});
 	</script>
 </head>
 <body>
@@ -36,12 +68,13 @@
 		
 	</div>
 	<ul class="navigation">
-		<li class="logo"><a href="index.html">seeing past sight.</a></li>
-		<li><a href="day.html">a day in the life</a></li>
-		<li><a href="interview.html" style="text-decoration:underline;">an interview with</a></li>
-		<li><a href="working.html">on designing for</a></li>
-		<li id="accessibility-button">accessibility mode</li>
+		<li class="logo"><a href="index.html" class="logo-white">seeing past sight.</a></li>
+		<li><a class="nav-links" href="day.html">a day in the life</a></li>
+		<li><a class="nav-links" href="interview.html" style="text-decoration:underline;">an interview with</a></li>
+		<li><a class="nav-links" href="working.html">on designing for</a></li>
 	</ul>
+
+	<div class="accessibility-button">accessibility mode</div>
 
 </body>
 </html>

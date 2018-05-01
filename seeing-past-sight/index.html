@@ -7,28 +7,45 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			console.log("ready freddy");
-			
-			$("#accessibility-button").click(function(){
-				$("body").toggleClass("body-accessibility");
-				$(".navigation").toggleClass("navigation-accessibility");
-				$(".logo a").toggleClass("logo-accessibility");
-				
-				console.log("working accessibility mode");
-			})
-		});
+
+	// create a function to see if accessibility is on or off
+
+		var accessibilityOn = false;
+		var updatePage = function(){
+			if(accessibilityOn){
+			// if accessibility is on...
+				$("body").addClass("body-accessibility");
+				$(".navigation").addClass("navigation-accessibility");
+				// $(".logo-white").addClass("logo-accessibility");
+				$(".logo-white").css("color","white");
+			}else{
+			// if accessibility is off...
+				$("body").removeClass("body-accessibility");
+				$(".navigation").removeClass("navigation-accessibility");
+				$(".logo-white").css("color","black");
+			}
+		};
+
+	$(".accessibility-button").click(function(){
+		accessibilityOn = !accessibilityOn;
+		updatePage();
+		console.log("updating index page");
+	});
+});
 	</script>
 </head>
 <body>
 	<h1>on approaching<br> accessibility.</h1>
-	<h2>Visually Impaired</h2>
+	<h2>Reading for the Visually Impaired</h2>
 
 	<ul class="navigation">
-		<li class="logo"><a href="index.html"> seeing past sight.</a></li>
-		<li><a href="day.html">a day in the life</a></li>
-		<li><a href="interview.html">an interview with</a></li>
-		<li><a href="working.html">on designing for</a></li>
-		<li id="accessibility-button">accessibility mode</li>
+		<li class="logo"><a class="logo-white" href="index.html"> seeing past sight.</a></li>
+		<li><a class="nav-links" href="day.html">a day in the life</a></li>
+		<li><a class="nav-links" href="interview.html">an interview with</a></li>
+		<li><a class="nav-links" href="working.html">on designing for</a></li>
 	</ul>
+
+	<div class="accessibility-button">accessibility mode</div>
 
 </body>
 </html>
