@@ -90,16 +90,16 @@ h2{
 .accessibility-button{
 	color:cyan;
 	background-color: black;
-	width: 20vw;
+	width: 15vw;
 	height: 10vh;
 	text-align: center;
 	position: fixed;
-  	top: 0vh;
-  	right: 0vw;
+  	top: 1vh;
+  	right: 1vw;
   	height: 8vh;
   	font-size: 1.5em;
   	vertical-align: middle;
-  	line-height: 60px;
+  	line-height: 70px;
   	padding: 0;
   	margin: 0;
   	outline: 1px solid black;
@@ -175,6 +175,20 @@ iframe{
 	background-color: black;
 	color:#ff0094;
 }
+.description-accessible{
+	font-size: 3em;
+	width: 90%;
+	line-height: 2.2em;
+	background-color: black;
+	color:#ff0094;
+}
+.description-accessible2{
+	font-size: 3em;
+	width: 90%;
+	line-height: 2.2em;
+	background-color: black;
+	color:#eeff00;
+}
 .grid{
 	width: 100%;
 	outline: 1px solid black;
@@ -200,63 +214,33 @@ iframe{
 	width: 30%;
 	background-color: #18fc05;
 }
-.designing{
-	list-style-type: none;
-/*	outline: 1px solid blue;*/
-	padding-left: 0;
-	margin-bottom: 10%;
-}
-.designing li{
-	font-size: 2em;
-	color: #18fc05;
-}
-.designing p{
-/*	outline: 1px solid yellow;*/
+.headers{
+	font-size: 1.4em;
+	line-height: 1.4em;
 	width: 60%;
+	background-color: cyan;
+	padding: 1%;	
+}
+.paragraph{
+	display: none;
 	font-size: 1.2em;
+	line-height: 1.5em;
+	width: 60%;
 }
-
-
-@media screen and (max-width: 600px) {
-  body {
-    /*background-color: olive;*/
-
-  }
-  .navigation{
-	list-style-type: none;
-	outline: 1px solid black;
-	width: 97vw;
-	padding: 0;
-  	margin: 0;
-  	height: 35vh;
-  	position: fixed;
-  	bottom: 1vh;
-  	left: 1vw;
-  	font-size: 1.5em;
-  	background-color: white;
-
-
+.headers-accessibility{
+	background-color: black;
+	color: white;
+	font-size: 3em;
+	line-height: 1.5em;
 }
-.navigation li{
-	display: block;
-	margin-left: 2vw;
-	vertical-align: middle;
-	line-height: 60px;
-}
-.navigation a{
-	text-decoration: none;
-/*	color:#18fc05;*/
-	float:none;
-}
-iframe{
-	margin-bottom: 90%;
-	width: 368px;
-	height: 207px;
-}
-.description{
+.paragraph_accessibility{
+/*	outline: 1px solid pink;*/
 	width: 100%;
-	padding: 1%;
+	font-size: 3em;
+	line-height: 2.2em;
+	color: cyan;
 }
-.white{
-	color:white;
-}
+
+
+
+  

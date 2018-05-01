@@ -7,11 +7,61 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			console.log("ready freddy");
-		// 	$("#accessibility-button").click(function(){
-				
-		// 		console.log("working accessibility mode");
-		// 	})
-		// });
+
+			$("#header1").click(function(){
+				$("#p1").toggle();
+			});
+			$("#header2").click(function(){
+				$("#p2").toggle();
+			});
+			$("#header3").click(function(){
+				$("#p3").toggle();
+			});
+			$("#header4").click(function(){
+				$("#p4").toggle();
+			});
+			$("#header5").click(function(){
+				$("#p5").toggle();
+			});
+
+	// create a function to see if accessibility is on or off
+
+			var accessibilityOn = false;
+			var updatePage = function(){
+				if(accessibilityOn){
+					// if accessibility is on...
+					$("body").addClass("body-accessibility");
+					$(".navigation").addClass("navigation-accessibility");
+					$(".description").addClass("description-accessible2");
+					$(".logo-white").css("color","white");
+					$(".accessibility-button").text("sighted mode");
+					$(".headers").addClass("headers-accessibility");
+					$(".paragraph").addClass("paragraph_accessibility");
+					// $("li").addClass("header-accessible");
+					// $("ul > p").css("font-size","3em");
+					// $("ul > p").addClass("p-accessible");
+				}else{
+					// if accessibility is off...
+					$("body").removeClass("body-accessibility");
+					$(".navigation").removeClass("navigation-accessibility");
+					$(".description").removeClass("description-accessible2");
+					$(".logo-white").css("color","black");
+					$(".accessibility-button").text("VIP mode");
+					$(".headers").removeClass("headers-accessibility");
+					$(".paragraph").removeClass("paragraph_accessibility");
+					// $("li").removeClass("header-accessible");
+					// $("ul > p").css("font-size","1.2em");
+					// $("ul > p").removeClass("p-accessible");
+
+				}
+			}
+
+			$(".accessibility-button").click(function(){
+				accessibilityOn = !accessibilityOn;
+				updatePage();
+				console.log("updating index page");
+			});
+		});
 	</script>
 </head>
 <body>
@@ -20,26 +70,33 @@
 
 	<p class="description">There are certain "rules" to keep in mind when designing for the visually impaired. As there are different degrees of visual impairments, it's important to have multiple features that will assist this range of people.</p>
 
-	<ul class="designing">
-		<li>1.Color &amp; Shape</li>
-		<p>High contrast is often used by the visually impaired. It's easiest to make out high contrast colors to differenciate between different parts of the website. Hard edges proved to be more successful with generous padding around them so the user can see the differences in contrast.</p>
-		<li>2.Typeface</li>
-		<p>Sans-serif fonts get rid of any excess shapes(such as serifs) that are not needed. Serifs can make it more difficult to read. What happens when type is completely removed and a new way of interacting with texts is provided?</p>
-		<li>3.Alternative Text</li>
-		<p>If using imagery, always provide descriptive alternative texts for screen readers to  provide.</p>
-		<li>4.Overall Size</li>
-		<p>Larger type is preferred and an ample line height so "zoom over" in accessibility mode can work without interference of seeing parts of the previous lines.</p>
-		<li>5.What is needed?</li>
-		<p>How much can be taken away/abstracted? What would a site look like that only consisted of high contrast, easily identifiable shapes and spoken text?</p>
-	</ul>
+	<div class="designing">
+		<div class="headers" id="header1">1.Color &amp; Shape</div>
+		<p class="paragraph" id="p1">High contrast is often used by the visually impaired. It's easiest to make out high contrast colors to differenciate between different parts of the website. Hard edges proved to be more successful with generous padding around them so the user can see the differences in contrast.</p>
+
+		<div class="headers" id="header2">2.Typeface</div>
+		<p class="paragraph" id="p2">Sans-serif fonts get rid of any excess shapes(such as serifs) that are not needed. Serifs can make it more difficult to read. What happens when type is completely removed and a new way of interacting with texts is provided?</p>
+
+		<div class="headers" id="header3">3.Alternative Text</div>
+		<p class="paragraph" id="p3">If using imagery, always provide descriptive alternative texts for screen readers to  provide.</p>
+
+		<div class="headers" id="header4">4.Overall Size</div>
+		<p class="paragraph" id="p4">Larger type is preferred and an ample line height so "zoom over" in accessibility mode can work without interference of seeing parts of the previous lines.</p>
+
+		<div class="headers" id="header5">5.What is needed?</div>
+		<p class="paragraph" id="p5" style="margin-bottom:10%;">How much can be taken away/abstracted? What would a site look like that only consisted of high contrast, easily identifiable shapes and spoken text?</p>
+
+	</div>
+		
 
 	<ul class="navigation">
 		<li class="logo"><a href="index.html" class="logo-white">seeing past sight.</a></li>
 		<li><a class="nav-links" href="day.html">a day in the life</a></li>
 		<li><a class="nav-links" href="interview.html"">an interview with</a></li>
 		<li><a class="nav-links" href="working.html" style="text-decoration:underline;">on designing for</a></li>
-		<li id="accessibility-button"><a href="https://anastasiakhadivi.github.io/readingwithoutpages/4-17-18/" target="_blank">demo.</li>
+		<!-- <li><a class="nav-links" href="https://anastasiakhadivi.github.io/readingwithoutpages/4-17-18/" target="_blank">demo</li> -->
+		<li><a class="nav-links" href="https://anastasiakhadivi.github.io/readingwithoutpages/4-17-18/" target="_blank">demo</a></li>
 	</ul>
-	<div class="accessibility-button">accessibility mode</div>
+	<div class="accessibility-button">VIP mode</div>
 </body>
 </html>
